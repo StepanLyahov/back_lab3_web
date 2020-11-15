@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/back_lab3_web-1.0-SNAPSHOT.jar back_lab3_web-1.0-SNAPSHOT.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "back_lab3_web-1.0-SNAPSHOT.jar"]
